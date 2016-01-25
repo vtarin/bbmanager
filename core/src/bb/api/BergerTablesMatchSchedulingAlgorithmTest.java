@@ -12,8 +12,7 @@ public class BergerTablesMatchSchedulingAlgorithmTest {
 		api.populateLeagueWithBotTeams(league);
 		MatchSchedulingAlgorithm scheduler  =  new BergerTablesMatchSchedulingAlgorithm();
 		scheduler.schedule(league);
-		
-		
+		System.out.println(league.matchDays.toString());
 	}
 
 }
