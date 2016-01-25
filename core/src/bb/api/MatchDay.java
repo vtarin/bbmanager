@@ -16,4 +16,8 @@ public class MatchDay {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "*****************\n"+matches.toString() ;
+	}
 }

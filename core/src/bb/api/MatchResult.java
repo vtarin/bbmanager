@@ -11,4 +11,9 @@ public class MatchResult {
 	public List<Player> injurersList;
 	public List<Player> casualtiesList;
 
+	@Override
+	public String toString() {
+		return scoreHome +
+				" - " + scoreAway;
+	}
 }

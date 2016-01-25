@@ -42,4 +42,8 @@ public class Team {
 		team.bot = bot;
 	}
 
+	@Override
+	public String toString() {
+		return name + "("+ (bot?"bot":"") +","+race +")";
+	}
 }
