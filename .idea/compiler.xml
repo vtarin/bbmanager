@@ -25,7 +25,6 @@
         <processorPath useClasspath="true" />
         <module name="core" />
         <module name="parent" />
-        <module name="Web-Admin" />
       </profile>
       <profile default="false" name="Annotation profile for Core" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -34,13 +33,20 @@
         <processorPath useClasspath="true" />
         <module name="Core" />
       </profile>
+      <profile default="false" name="Annotation profile for Web-Admin" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Web-Admin" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="core" target="1.5" />
       <module name="Core" target="1.8" />
       <module name="parent" target="1.5" />
       <module name="Parent Module" target="1.8" />
-      <module name="Web-Admin" target="1.5" />
+      <module name="Web-Admin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
