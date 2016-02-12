@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Roster {
 
-    public int size;
-    public List<Player> players = new ArrayList<Player>();
+    private List<Player> players = new ArrayList<Player>();
 
+    public List<Player> getPlayers() {
+        return players;
+    }
 }

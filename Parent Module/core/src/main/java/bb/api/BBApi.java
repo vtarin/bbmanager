@@ -220,7 +220,7 @@ public class BBApi {
     public void populateTeamRoster(Team newTeam, Roster roster) {
 
         Iterator<Player> players = getPlayersAvailableToSelectFromTeam(newTeam);
-        while (roster.size < 11 && players.hasNext()) {
+        while (roster.getPlayers().size() < 11 && players.hasNext()) {
             Player player = players.next();
             assignPlayerToTeamRoster(player, roster);
         }
@@ -228,15 +228,15 @@ public class BBApi {
     }
 
     public void assignPlayerToTeamRoster(Player playerOne, Roster roster) {
-        if (!roster.players.contains(playerOne) && roster.players.size() < 11) {
-            roster.players.add(playerOne);
+        if (!roster.getPlayers().contains(playerOne) && roster.getPlayers().size() < 11) {
+            roster.getPlayers().add(playerOne);
         }
 
     }
 
     public void removePlayerFromTeamRoster(Player playerOne, Roster roster) {
-        if (roster.players.contains(playerOne)) {
-            roster.players.remove(playerOne);
+        if (roster.getPlayers().contains(playerOne)) {
+            roster.getPlayers().remove(playerOne);
         }
 
     }
@@ -251,7 +251,7 @@ public class BBApi {
     }
 
     public Player getNthPlayerFromRoster(int i, Roster roster) {
-        return roster.players.get(i);
+        return roster.getPlayers().get(i);
 
     }
 
@@ -564,9 +564,9 @@ public class BBApi {
     }
 
     private void removePlayerFromTeamRosters(Player player, Team team) {
-        team.getDefaultRoster().players.remove(player);
+        team.getDefaultRoster().getPlayers().remove(player);
         for (Roster r : team.rosters) {
-            r.players.remove(player);
+            r.getPlayers().remove(player);
         }
 
     }

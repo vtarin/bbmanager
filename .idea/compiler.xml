@@ -23,7 +23,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="core" />
         <module name="parent" />
       </profile>
       <profile default="false" name="Annotation profile for Core" enabled="true">
