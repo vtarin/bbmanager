@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Web Administration Module/Web-Admin.iml" filepath="$PROJECT_DIR$/Web Administration Module/Web-Admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bbmanager.iml" filepath="$PROJECT_DIR$/.idea/bbmanager.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
     </modules>
