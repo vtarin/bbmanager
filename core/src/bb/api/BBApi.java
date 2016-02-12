@@ -406,7 +406,6 @@ public class BBApi {
 		StringBuffer strb = new StringBuffer();
 		Collections.sort(league.teamClassification,
 				new TeamClassificationComparator());
-		strb.append("\n*****************************\n");
 		for (ClassifiedTeam team : league.teamClassification) {
 			strb.append(team.team.name).append(" ").append(team.points)
 					.append(" points");
